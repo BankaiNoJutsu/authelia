@@ -2,7 +2,7 @@ package schema
 
 // Theme represents the configuration related to Styling.
 type ThemeConfiguration struct {
-        Name                 string `mapstructure:"name"`
+        Name                string `mapstructure:"name"`
         PrimaryColor        string `mapstructure:"primary_color"`
         SecondaryColor      string `mapstructure:"secondary_color"`
 }

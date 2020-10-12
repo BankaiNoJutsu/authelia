@@ -44,7 +44,7 @@ Configuration.schema.json
 
 qemu-*-static
 
-internal/configuration/configuration.gen.go
-internal/server/public_html.gen.go
+configuration.gen.go
+public_html.gen.go
 
 __debug_bin
