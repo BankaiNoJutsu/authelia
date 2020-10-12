@@ -80,7 +80,7 @@ func TestShouldRaiseWhenNoHeaderProvidedToDetectTargetURL(t *testing.T) {
 	defer mock.Close()
 	_, err := getOriginalURL(mock.Ctx)
 	assert.Error(t, err)
-	assert.Equal(t, "Missing header X-Fowarded-Proto", err.Error())
+	assert.Equal(t, "Missing header X-Forwarded-Proto", err.Error())
 }
 
 func TestShouldRaiseWhenNoXForwardedHostHeaderProvidedToDetectTargetURL(t *testing.T) {
@@ -90,7 +90,7 @@ func TestShouldRaiseWhenNoXForwardedHostHeaderProvidedToDetectTargetURL(t *testi
 	mock.Ctx.Request.Header.Set("X-Forwarded-Proto", "https")
 	_, err := getOriginalURL(mock.Ctx)
 	assert.Error(t, err)
-	assert.Equal(t, "Missing header X-Fowarded-Host", err.Error())
+	assert.Equal(t, "Missing header X-Forwarded-Host", err.Error())
 }
 
 func TestShouldRaiseWhenXForwardedProtoIsNotParsable(t *testing.T) {
@@ -913,7 +913,6 @@ func TestShouldGetRemovedUserGroupsFromBackend(t *testing.T) {
 
 func TestShouldGetAddedUserGroupsFromBackend(t *testing.T) {
 	mock := mocks.NewMockAutheliaCtx(t)
-	//defer mock.Close()
 
 	// Setup pointer to john so we can adjust it during the test.
 	user := &authentication.UserDetails{
