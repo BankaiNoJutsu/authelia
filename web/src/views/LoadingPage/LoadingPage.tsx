@@ -1,7 +1,7 @@
 import React from "react";
 import ReactLoading from "react-loading";
 import { Typography, Grid } from "@material-ui/core";
-import { useTheme, usePrimaryColor } from '../../hooks/Theme';
+import { useTheme, usePrimaryColor } from '../../utils/Theme';
 
 var color = "#000";
 if (useTheme() === "dark") {

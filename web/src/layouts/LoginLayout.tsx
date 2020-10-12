@@ -2,7 +2,8 @@ import React, { ReactNode } from "react";
 import { Grid, makeStyles, Container, Typography, Link } from "@material-ui/core";
 import { ReactComponent as UserSvg } from "../assets/images/user.svg";
 import { grey } from "@material-ui/core/colors";
-import { useTheme, usePrimaryColor } from '../hooks/Theme';
+import { useTheme, usePrimaryColor } from '../utils/Theme';
+
 
 var color = "#000";
 if (useTheme() === "dark") {
@@ -71,7 +72,7 @@ const useStyles = makeStyles(theme => ({
     icon: {
         margin: theme.spacing(),
         width: "64px",
-        fill: color,
+        fill: color, 
     },
     body: {},
     poweredBy: {
