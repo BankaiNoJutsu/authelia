@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ThemeProvider, CssBaseline } from '@material-ui/core';
-import { useTheme } from './hooks/Theme';
+import { useTheme } from './utils/Theme';
 import * as themes from './themes';
 
 function Theme() {

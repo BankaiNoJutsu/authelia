@@ -1,5 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import { usePrimaryColor, useSecondaryColor } from '../hooks/Theme';
+import { usePrimaryColor, useSecondaryColor } from '../utils/Theme';
 
 const custom = createMuiTheme({
   palette: {
